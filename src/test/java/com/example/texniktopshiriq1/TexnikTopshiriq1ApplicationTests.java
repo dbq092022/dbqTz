@@ -1,0 +1,13 @@
+package com.example.texniktopshiriq1;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class TexnikTopshiriq1ApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
