@@ -5,13 +5,13 @@ import lombok.Data;
 @Data
 public class TovarDTO {
 
-    private String G32;
+    private String g32;
 
-    private String G31_NAME;
+    private String g31_name;
 
-    private String G31_6;
+    private String g31_6;
 
-    private String G43;
+    private String g43;
 
     private Integer declarationDataId;
 }

@@ -18,6 +18,7 @@ public class TovarService {
 
     @Autowired
     DeclarationDataRepository declarationDataRepository;
+
     public ApiResponse getTovar() {
         return new ApiResponse("Ok",true, tovarRepository.findAll());
     }
@@ -30,9 +31,10 @@ public class TovarService {
         Tovar tovar = new Tovar();
         tovar.setG32(tovarDTO.getG32());
         tovar.setG43(tovarDTO.getG43());
-        tovar.setG31_NAME(tovarDTO.getG31_NAME());
+        tovar.setG31_name(tovarDTO.getG31_name());
         tovar.setG31_6(tovarDTO.getG31_6());
         tovar.setDeclarationData(optionalDeclarationData.get());
+        tovarRepository.save(tovar);
         return new ApiResponse("Tovar saqlandi", true);
     }
 }

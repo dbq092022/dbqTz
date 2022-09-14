@@ -12,38 +12,27 @@ public class DeclarationData {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false)
-    private String G7_A;
+    private String g7_a;
 
-    @Column(nullable = false)
-    private Date G7_B;
+    private Date g7_b;
 
-    @Column(nullable = false)
-    private String G7_C;
+    private String g7_c;
 
-    @Column(nullable = false)
-    private String STATUS;
+    private String status;
 
-    @Column(nullable = false)
-    private String FLAG_R;
+    private String flag_r;
 
-    @Column(nullable = false)
-    private String G1_A;
+    private String g1_a;
 
-    @Column(nullable = false)
-    private String G1_B;
+    private String g1_b;
 
-    @Column(nullable = false)
-    private String G8_NAME;
+    private String g8_name;
 
-    @Column(nullable = false)
-    private String G8_CODE2;
+    private String g8_code2;
 
-    @Column(nullable = false)
-    private String G22_A;
+    private String g22_a;
 
-    @Column(nullable = false)
-    private Double G23;
+    private Double g23;
 
     @OneToOne(optional = false)
     private GTDInformation gtdInformation;

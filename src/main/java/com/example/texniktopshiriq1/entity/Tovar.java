@@ -12,16 +12,16 @@ public class Tovar {
     private Integer id;
 
     @Column(nullable = false)
-    private String G32;
+    private String g32;
 
     @Column(nullable = false)
-    private String G31_NAME;
+    private String g31_name;
 
     @Column(nullable = false)
-    private String G31_6;
+    private String g31_6;
 
     @Column(nullable = false)
-    private String G43;
+    private String g43;
 
     @ManyToOne(optional = false)
     private DeclarationData declarationData;

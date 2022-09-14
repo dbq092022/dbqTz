@@ -7,5 +7,5 @@ import java.util.Date;
 
 @Data
 public class GTDInformationDTO {
-      private Timestamp InformationDate = (Timestamp) new Date();
+      private Timestamp InformationDate;
 }

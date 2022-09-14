@@ -8,27 +8,27 @@ import java.util.Date;
 
 @Data
 public class DeclarationDataDTO {
-    private String G7_A;
+    private String g7_a;
 
-    private Date G7_B;
+    private Date g7_b;
 
-    private String G7_C;
+    private String g7_c;
 
-    private String STATUS;
+    private String status;
 
-    private String FLAG_R;
+    private String flag_r;
 
-    private String G1_A;
+    private String g1_a;
 
-    private String G1_B;
+    private String g1_b;
 
-    private String G8_NAME;
+    private String g8_name;
 
-    private String G8_CODE2;
+    private String g8_code2;
 
-    private String G22_A;
+    private String g22_a;
 
-    private Double G23;
+    private Double g23;
 
     private Integer gtdInformationId;
 }

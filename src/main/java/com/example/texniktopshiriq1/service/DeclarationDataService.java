@@ -29,16 +29,16 @@ public class DeclarationDataService {
         }
 
         DeclarationData declarationData = new DeclarationData();
-        declarationData.setG7_A(declarationDataDTO.getG7_A());
-        declarationData.setG7_B(declarationDataDTO.getG7_B());
-        declarationData.setG7_C(declarationDataDTO.getG7_C());
-        declarationData.setSTATUS(declarationDataDTO.getSTATUS());
-        declarationData.setFLAG_R(declarationDataDTO.getFLAG_R());
-        declarationData.setG1_A(declarationDataDTO.getG1_A());
-        declarationData.setG1_B(declarationDataDTO.getG1_B());
-        declarationData.setG8_NAME(declarationDataDTO.getG8_NAME());
-        declarationData.setG8_CODE2(declarationDataDTO.getG8_CODE2());
-        declarationData.setG22_A(declarationDataDTO.getG22_A());
+        declarationData.setG7_a(declarationDataDTO.getG7_a());
+        declarationData.setG7_b(declarationDataDTO.getG7_b());
+        declarationData.setG7_c(declarationDataDTO.getG7_c());
+        declarationData.setStatus(declarationDataDTO.getStatus());
+        declarationData.setFlag_r(declarationDataDTO.getFlag_r());
+        declarationData.setG1_a(declarationDataDTO.getG1_a());
+        declarationData.setG1_b(declarationDataDTO.getG1_b());
+        declarationData.setG8_name(declarationDataDTO.getG8_name());
+        declarationData.setG8_code2(declarationDataDTO.getG8_code2());
+        declarationData.setG22_a(declarationDataDTO.getG22_a());
         declarationData.setG23(declarationDataDTO.getG23());
         declarationData.setGtdInformation(optionalGTDInformation.get());
         declarationDataRepository.save(declarationData);

@@ -12,5 +12,5 @@ public class GTDInformation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private Timestamp InformationDate;
+        private Timestamp InformationDate;
 }
