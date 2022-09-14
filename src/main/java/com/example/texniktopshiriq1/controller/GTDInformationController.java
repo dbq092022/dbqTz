@@ -1,28 +1,28 @@
 package com.example.texniktopshiriq1.controller;
 
 import com.example.texniktopshiriq1.payload.ApiResponse;
-import com.example.texniktopshiriq1.payload.GTKInformationDTO;
-import com.example.texniktopshiriq1.service.GTKInformationService;
+import com.example.texniktopshiriq1.payload.GTDInformationDTO;
+import com.example.texniktopshiriq1.service.GTDInformationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/gtkInformation")
-public class GTKInformationController {
+@RequestMapping("/api/gtdInformation")
+public class GTDInformationController {
     @Autowired
-    GTKInformationService gtkInformationService;
+    GTDInformationService gtdInformationService;
 
     @GetMapping
-    public HttpEntity<?> getGTKInformation() {
-        ApiResponse apiResponse = gtkInformationService.getGTKInformation();
+    public HttpEntity<?> getGTDInformation() {
+        ApiResponse apiResponse = gtdInformationService.getGTDInformation();
         return ResponseEntity.status(apiResponse.isSuccess()? 200 : 409).body(apiResponse);
     }
 
     @PostMapping
-    public HttpEntity<?> addGTKInformation(@RequestBody GTKInformationDTO gtkInformationDTO) {
-        ApiResponse apiResponse = gtkInformationService.addGTKInformation(gtkInformationDTO);
+    public HttpEntity<?> addGTDInformation(@RequestBody GTDInformationDTO gtdInformationDTO) {
+        ApiResponse apiResponse = gtdInformationService.addGTDInformation(gtdInformationDTO);
         return ResponseEntity.status(apiResponse.isSuccess()? 201 : 409).body(apiResponse);
     }
 

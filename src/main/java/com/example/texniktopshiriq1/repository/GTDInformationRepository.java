@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface GTKInformationRepository extends JpaRepository<GTDInformation, Integer> {
+public interface GTDInformationRepository extends JpaRepository<GTDInformation, Integer> {
 }

@@ -44,4 +44,7 @@ public class DeclarationData {
 
     @Column(nullable = false)
     private Double G23;
+
+    @OneToOne(optional = false)
+    private GTDInformation gtdInformation;
 }

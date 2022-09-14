@@ -1,5 +1,6 @@
 package com.example.texniktopshiriq1.payload;
 
+import com.example.texniktopshiriq1.entity.GTDInformation;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -28,4 +29,6 @@ public class DeclarationDataDTO {
     private String G22_A;
 
     private Double G23;
+
+    private Integer gtdInformationId;
 }

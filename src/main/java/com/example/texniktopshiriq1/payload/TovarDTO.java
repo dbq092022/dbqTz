@@ -1,5 +1,6 @@
 package com.example.texniktopshiriq1.payload;
 
+import com.example.texniktopshiriq1.entity.DeclarationData;
 import lombok.Data;
 @Data
 public class TovarDTO {
@@ -12,4 +13,5 @@ public class TovarDTO {
 
     private String G43;
 
+    private Integer declarationDataId;
 }

@@ -22,4 +22,7 @@ public class Tovar {
 
     @Column(nullable = false)
     private String G43;
+
+    @ManyToOne(optional = false)
+    private DeclarationData declarationData;
 }
